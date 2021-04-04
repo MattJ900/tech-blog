@@ -1,12 +1,12 @@
 # Tech-Blog
 
-## Description
-
+## Description 
+Roaring Lion Test 123
 
 ## Table of Contents
 [Installation](#installation)
 
-[Technologies](#technologies
+[Technologies](#technologies)
 
 [URLs](#urls)
 
@@ -15,7 +15,7 @@
 2. npm run deed
 3. npm run watch
 
-##TechNologies
+## Technologies
 JavaScript ES6
 Node.js
 Express.js
@@ -26,8 +26,6 @@ bcrypt (npm package for password hashing)
 handlebars (npm package for a template engine used for html and javascript integration on the front-end)
 Heroku (hosting platform)
 JawsDB (a Heroku add-on for hosting the MySQL database)
-
-
 
 ## Screenshots
 

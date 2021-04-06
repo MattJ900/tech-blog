@@ -1,31 +1,22 @@
- <div class="column">
-<h2 class="title pb-4">create new account:</h2><hr>
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-<div>
-    <label for="twitter-signup">twitter:</label>
-    <input type="text" id="twitter-signup" />
-  </div>
-    <div>
-    <label for="github-signup">github:</label>
-    <input type="text" id="github-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit" class="button is-primary">signup</button>
-  </div>
-</form>
-</div>
 
-<!-- javascript file-->
-<script src="/public/js/signup.js"></script>
+
+{{> post-info post}}
+
+{{#if loggedIn}}
+<div class="card">
+    <h3 class="card-header"></h3>
+    <form class="card-body comment-form" id="comment-form">
+
+        <label class="form-label">Comment</label>
+        <input id="comment" name="comment-body" class="form-input" />
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
